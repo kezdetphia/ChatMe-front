@@ -24,7 +24,7 @@ const Chat = () => {
 
   //Function to establish a WebSocket connection
   const connectToWs = () => {
-    const ws = new WebSocket(`ws://localhost:3030`);
+    const ws = new WebSocket(`ws://polar-brook-65574-e9fd6feec02b.herokuapp.com`);
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => {
