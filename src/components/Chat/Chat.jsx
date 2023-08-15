@@ -166,7 +166,7 @@ const Chat = () => {
               key={userId}
               id={userId}
               online={false}
-              username={offlinePeople[userId].username} // Access the username using the user ID
+              username={offlinePeople[userId]?.username} // Access the username using the user ID
               onClick={() => setSelectedUserId(userId)}
               selected={userId === selectedUserId}
             />
