@@ -8,7 +8,7 @@ import Routes from './components/Routes';
 
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:3030'
+  axios.defaults.baseURL = 'https://polar-brook-65574-e9fd6feec02b.herokuapp.com/'
   //to set our cookies from api
   axios.defaults.withCredentials= true
   const {username } = useContext(UserContext)
